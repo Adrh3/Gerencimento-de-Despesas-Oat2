@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Painel empresarial Phoenix Bank: acompanhe contas, investimentos, objetivos e movimentações da empresa."
+  >
+  <title>Painel empresarial | Phoenix Bank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#conteudo-principal">Pular para o conteúdo principal</a>
+
+  <header>
+    <a href="#inicio" aria-label="Phoenix Bank, ir para o início">
+      <span aria-hidden="true">P</span>
+      <span>Phoenix Bank</span>
+    </a>
+
+    <form action="#" method="get" role="search">
+      <label for="busca">Buscar informações financeiras</label>
+      <input type="search" id="busca" name="busca" placeholder="O que você procura?">
+      <button type="submit">Buscar</button>
+    </form>
+
+    <nav aria-label="Navegação empresarial">
+      <ul>
+        <li><a href="#notificacoes">Notificações <span>2 novas</span></a></li>
+        <li><a href="#ajuda">Ajuda</a></li>
+        <li><a href="#perfil">Dados da empresa</a></li>
+        <li><a href="login.html">Encerrar sessão</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav aria-label="Menu principal">
+    <ul>
+      <li><a href="#inicio" aria-current="page">Início</a></li>
+      <li><a href="#contas">Contas</a></li>
+      <li><a href="#investimentos">Investimentos</a></li>
+      <li><a href="#planejamento">Planejamento</a></li>
+      <li><a href="#movimentacoes">Movimentações</a></li>
+      <li><a href="#cartoes">Cartões corporativos</a></li>
+      <li><a href="#perfil">Empresa</a></li>
+    </ul>
+  </nav>
+
+  <main id="conteudo-principal">
+    <section id="inicio" aria-labelledby="boas-vindas">
+      <p>Segunda-feira, <time datetime="2026-11-09">9 de novembro de 2026</time></p>
+      <h1 id="boas-vindas">Painel financeiro da empresa</h1>
+      <p>Phoenix Tecnologia e Serviços Ltda. — Matriz</p>
+
+      <form action="#" method="get">
+        <label for="empresa-selecionada">Empresa e unidade</label>
+        <select id="empresa-selecionada" name="empresa">
+          <option value="matriz" selected>Phoenix Tecnologia e Serviços Ltda. — Matriz</option>
+          <option value="filial-sp">Phoenix Tecnologia e Serviços Ltda. — Filial SP</option>
+        </select>
+        <button type="submit">Selecionar unidade</button>
+      </form>
+    </section>
+
+    <section id="resumo-financeiro" aria-labelledby="resumo-titulo">
+      <h2 id="resumo-titulo">Resumo financeiro</h2>
+      <p>Posição atualizada em <time datetime="2026-11-09T08:30">09/11/2026 às 08:30</time>.</p>
+      <dl>
+        <div>
+          <dt>Patrimônio empresarial</dt>
+          <dd><data value="128420.50">R$ 128.420,50</data></dd>
+          <dd>Variação no mês: +2,4%</dd>
+        </div>
+        <div>
+          <dt>Saldo disponível nas contas empresariais</dt>
+          <dd><data value="8420.50">R$ 8.420,50</data></dd>
+          <dd>Consolidado das contas operacionais</dd>
+        </div>
+        <div>
+          <dt>Investimentos empresariais</dt>
+          <dd><data value="120000.00">R$ 120.000,00</data></dd>
+          <dd>Distribuídos em 4 categorias</dd>
+        </div>
+        <div>
+          <dt>Despesas empresariais previstas no mês</dt>
+          <dd><data value="3260.00">R$ 3.260,00</data></dd>
+          <dd>Próximo vencimento em <time datetime="2026-11-12">12/11</time></dd>
+        </div>
+      </dl>
+      <p><a href="#investimentos">Ver composição do patrimônio empresarial</a></p>
+    </section>
+
+    <nav aria-label="Ações rápidas">
+      <h2>Acessos rápidos</h2>
+      <ul>
+        <li><a href="#transferencias">Registrar transferência empresarial</a></li>
+        <li><a href="#pagamentos">Registrar pagamento</a></li>
+        <li><a href="#depositos">Consultar dados para recebimentos</a></li>
+        <li><a href="#investimentos">Consultar investimentos</a></li>
+        <li><a href="#movimentacoes">Consultar extrato empresarial</a></li>
+        <li><a href="#cartoes">Gerenciar cartões corporativos</a></li>
+      </ul>
+    </nav>
+
+    <section id="contas" aria-labelledby="contas-titulo">
+      <h2 id="contas-titulo">Contas empresariais</h2>
+      <table>
+        <caption>Contas vinculadas à empresa</caption>
+        <thead>
+          <tr>
+            <th scope="col">Identificação</th>
+            <th scope="col">Agência</th>
+            <th scope="col">Número</th>
+            <th scope="col">Saldo disponível</th>
+            <th scope="col">Situação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Conta operacional</th>
+            <td>0001</td>
+            <td>*****-4821</td>
+            <td>R$ 8.420,50</td>
+            <td>Ativa</td>
+          </tr>
+          <tr>
+            <th scope="row">Conta de reserva empresarial</th>
+            <td>0001</td>
+            <td>*****-9017</td>
+            <td>R$ 15.000,00</td>
+            <td>Ativa</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><a href="#perfil">Consultar dados cadastrais da empresa</a></p>
+    </section>
+
+    <section id="transferencias" aria-labelledby="transferencias-titulo">
+      <h2 id="transferencias-titulo">Transferências empresariais</h2>
+      <p>Consulte os dados do favorecido e da conta de origem antes de registrar a operação.</p>
+      <form action="#" method="post">
+        <div>
+          <label for="conta-origem">Conta empresarial de origem</label>
+          <select id="conta-origem" name="conta-origem" required>
+            <option value="">Selecione uma conta</option>
+            <option value="principal">Conta operacional — final 4821</option>
+            <option value="reserva">Reserva empresarial — final 9017</option>
+          </select>
+        </div>
+        <div>
+          <label for="chave-destino">Chave Pix ou dados bancários do favorecido</label>
+          <input type="text" id="chave-destino" name="favorecido" autocomplete="off" required>
+        </div>
+        <div>
+          <label for="valor-transferencia">Valor da transferência</label>
+          <input
+            type="number"
+            id="valor-transferencia"
+            name="valor"
+            min="0.01"
+            step="0.01"
+            inputmode="decimal"
+            placeholder="0,00"
+            required
+          >
+        </div>
+        <div>
+          <label for="descricao-transferencia">Identificação da operação (opcional)</label>
+          <input type="text" id="descricao-transferencia" name="descricao" maxlength="80">
+        </div>
+        <button type="submit">Registrar transferência</button>
+      </form>
+    </section>
+
+    <section id="pagamentos" aria-labelledby="pagamentos-titulo">
+      <h2 id="pagamentos-titulo">Pagamentos da empresa</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="codigo-barras">Código de barras</label>
+          <input
+            type="text"
+            id="codigo-barras"
+            name="codigo-barras"
+            inputmode="numeric"
+            autocomplete="off"
+            placeholder="Digite ou cole o código"
+            required
+          >
+        </div>
+        <div>
+          <label for="conta-pagamento">Conta empresarial</label>
+          <select id="conta-pagamento" name="conta-pagamento">
+            <option value="principal">Conta operacional — final 4821</option>
+            <option value="reserva">Reserva empresarial — final 9017</option>
+          </select>
+        </div>
+        <button type="submit">Consultar e registrar pagamento</button>
+      </form>
+    </section>
+
+    <section id="depositos" aria-labelledby="depositos-titulo">
+      <h2 id="depositos-titulo">Entradas e depósitos</h2>
+      <p>Consulte os dados bancários da empresa para receber valores.</p>
+      <ul>
+        <li><a href="#dados-pix">Dados Pix da empresa</a></li>
+        <li><a href="#dados-transferencia">Dados bancários para recebimento</a></li>
+      </ul>
+      <div id="dados-pix">
+        <h3>Dados Pix</h3>
+        <p>Chave Pix empresarial: financeiro@phoenix.example</p>
+      </div>
+      <div id="dados-transferencia">
+        <h3>Dados para transferência</h3>
+        <p>Consulte agência e conta empresarial antes de realizar um depósito.</p>
+      </div>
+    </section>
+
+    <section id="investimentos" aria-labelledby="investimentos-titulo">
+      <h2 id="investimentos-titulo">Investimentos da empresa</h2>
+      <p>Patrimônio investido: <data value="120000.00">R$ 120.000,00</data></p>
+      <form action="#" method="get">
+        <label for="periodo-carteira">Período de desempenho</label>
+        <select id="periodo-carteira" name="periodo">
+          <option value="mes" selected>Este mês</option>
+          <option value="ano">Este ano</option>
+          <option value="12-meses">Últimos 12 meses</option>
+        </select>
+        <button type="submit">Aplicar período</button>
+      </form>
+
+      <dl>
+        <div>
+          <dt>Rendimento no mês</dt>
+          <dd><data value="2840.50">R$ 2.840,50</data></dd>
+        </div>
+        <div>
+          <dt>Rentabilidade no mês</dt>
+          <dd>2,4%</dd>
+        </div>
+        <div>
+          <dt>Política de investimentos empresariais</dt>
+          <dd>Perfil moderado</dd>
+        </div>
+      </dl>
+
+      <figure>
+        <figcaption>Desempenho da carteira no período selecionado</figcaption>
+        <p>Área reservada para o gráfico de evolução dos investimentos.</p>
+      </figure>
+
+      <table>
+        <caption>Distribuição da carteira por classe de ativo</caption>
+        <thead>
+          <tr>
+            <th scope="col">Classe de ativo</th>
+            <th scope="col">Saldo bruto</th>
+            <th scope="col">Participação</th>
+            <th scope="col">Rentabilidade no mês</th>
+            <th scope="col">Detalhes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Renda fixa</th>
+            <td>R$ 60.000,00</td>
+            <td>50%</td>
+            <td>1,1%</td>
+            <td><a href="#detalhes-renda-fixa">Ver ativos</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Fundos de investimento</th>
+            <td>R$ 30.000,00</td>
+            <td>25%</td>
+            <td>2,8%</td>
+            <td><a href="#detalhes-fundos">Ver ativos</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Ações</th>
+            <td>R$ 18.000,00</td>
+            <td>15%</td>
+            <td>4,2%</td>
+            <td><a href="#detalhes-acoes">Ver ativos</a></td>
+          </tr>
+          <tr>
+            <th scope="row">Fundos imobiliários</th>
+            <td>R$ 12.000,00</td>
+            <td>10%</td>
+            <td>1,7%</td>
+            <td><a href="#detalhes-imobiliarios">Ver ativos</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <details id="detalhes-renda-fixa">
+        <summary>Detalhes de renda fixa</summary>
+        <p>Posição consolidada dos ativos desta categoria: R$ 60.000,00.</p>
+      </details>
+      <details id="detalhes-fundos">
+        <summary>Detalhes de fundos de investimento</summary>
+        <p>Posição consolidada dos ativos desta categoria: R$ 30.000,00.</p>
+      </details>
+      <details id="detalhes-acoes">
+        <summary>Detalhes de ações</summary>
+        <p>Posição consolidada dos ativos desta categoria: R$ 18.000,00.</p>
+      </details>
+      <details id="detalhes-imobiliarios">
+        <summary>Detalhes de fundos imobiliários</summary>
+        <p>Posição consolidada dos ativos desta categoria: R$ 12.000,00.</p>
+      </details>
+      <p><a href="#perfil">Consultar política de investimentos da empresa</a></p>
+    </section>
+    <section id="planejamento" aria-labelledby="despesas-titulo">
+      <h2>Gerenciamento de Despesas</h2>
+      <h3>Próximas despesas programadas</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Despesa</th>
+                <th>Vencimento</th>
+                <th>Valor</th>
+                <th>Situação</th>
+                <th>
+                    <button id="addButton">Adicionar despesa</button>
+                </th>
+            </tr>
+        </thead>
+        <tbody id="resultadoListaDespesa">
+
+        </tbody>
+        </table>
+
+        <form id="formularioDespesas" hidden>
+           <label for="despesaProgramada">Despesa</label>
+           <input type="text" id="despesaProgramada" required> 
+           <label for="vencimentoDaDespesa">Vencimento</label>
+           <input type="date" id="vencimentoDaDespesa" required> 
+           <label for="valorDespesa">Valor</label>
+           <input type="number" min="0" step="0.01" id="valorDespesa" required>
+           <label for="situacaoDespesa">Situação</label>
+           <select id="situacaoDespesa" required>
+                <option value="">Selecione</option>
+                <option value="Agendada">Agendada</option>
+                <option value="A vencer">A vencer</option>
+                <option value="Pagamento realizado">Pagamento realizado</option> 
+            </select>
+           <button type="submit">Salvar</button>
+        </form>
+        <p id="resultadoDaSoma">Total despesas: R$ 0,00</p>
+        </section>
+
+    <section id="movimentacoes" aria-labelledby="movimentacoes-titulo">
+      <h2 id="movimentacoes-titulo">Movimentações recentes</h2>
+      <form action="#" method="get">
+        <div>
+          <label for="filtro-tipo">Tipo de movimentação</label>
+          <select id="filtro-tipo" name="tipo">
+            <option value="todas" selected>Todas</option>
+            <option value="entrada">Entradas</option>
+            <option value="saida">Saídas</option>
+            <option value="investimento">Investimentos</option>
+          </select>
+        </div>
+        <div>
+          <label for="filtro-data">A partir de</label>
+          <input type="date" id="filtro-data" name="data-inicial">
+        </div>
+        <button type="submit">Filtrar movimentações</button>
+      </form>
+
+      <table>
+        <caption>Movimentações recentes da conta e dos investimentos</caption>
+        <thead>
+          <tr>
+            <th scope="col">Descrição</th>
+            <th scope="col">Data</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Conta empresarial</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Situação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Aplicação em renda fixa</th>
+            <td><time datetime="2026-11-06">06/11/2026</time></td>
+            <td>Investimento</td>
+            <td>Conta operacional — final 4821</td>
+            <td>− R$ 2.000,00</td>
+            <td>Concluída</td>
+          </tr>
+          <tr>
+            <th scope="row">Transferência recebida</th>
+            <td><time datetime="2026-11-05">05/11/2026</time></td>
+            <td>Entrada</td>
+            <td>Conta operacional — final 4821</td>
+            <td>+ R$ 6.500,00</td>
+            <td>Concluída</td>
+          </tr>
+          <tr>
+            <th scope="row">Resgate de fundo</th>
+            <td><time datetime="2026-11-04">04/11/2026</time></td>
+            <td>Resgate</td>
+            <td>Conta operacional — final 4821</td>
+            <td>+ R$ 850,00</td>
+            <td>Concluída</td>
+          </tr>
+          <tr>
+            <th scope="row">Rendimento de investimento</th>
+            <td><time datetime="2026-11-03">03/11/2026</time></td>
+            <td>Rendimento</td>
+            <td>Carteira de investimentos</td>
+            <td>+ R$ 250,00</td>
+            <td>Concluída</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><a href="#extrato-completo">Acessar extrato completo</a></p>
+      <section id="extrato-completo" aria-labelledby="extrato-titulo">
+        <h3 id="extrato-titulo">Extrato completo</h3>
+        <p>Selecione um período no filtro acima para consultar outras movimentações.</p>
+      </section>
+    </section>
+
+    <section id="cartoes" aria-labelledby="cartoes-titulo">
+      <h2 id="cartoes-titulo">Cartões corporativos</h2>
+      <article aria-labelledby="cartao-principal-titulo">
+        <h3 id="cartao-principal-titulo">Cartão corporativo Phoenix</h3>
+        <p>Final **** **** **** 4821</p>
+        <p>Situação: ativo</p>
+        <dl>
+          <div>
+            <dt>Fatura corporativa atual</dt>
+            <dd>R$ 1.284,90</dd>
+          </div>
+          <div>
+            <dt>Vencimento</dt>
+            <dd><time datetime="2026-11-20">20/11/2026</time></dd>
+          </div>
+          <div>
+            <dt>Limite disponível</dt>
+            <dd>R$ 8.715,10</dd>
+          </div>
+        </dl>
+        <ul>
+          <li><a href="#fatura">Consultar fatura</a></li>
+          <li><a href="#limites">Consultar limites</a></li>
+          <li><a href="#seguranca">Opções de segurança</a></li>
+        </ul>
+      </article>
+      <section id="fatura" aria-labelledby="fatura-titulo">
+        <h3 id="fatura-titulo">Fatura corporativa atual</h3>
+        <p>Valor parcial: R$ 1.284,90. Fechamento previsto para <time datetime="2026-11-14">14/11/2026</time>.</p>
+      </section>
+      <section id="limites" aria-labelledby="limites-titulo">
+        <h3 id="limites-titulo">Limites do cartão corporativo</h3>
+        <p>Limite total: R$ 10.000,00. Limite disponível: R$ 8.715,10.</p>
+      </section>
+      <section id="seguranca" aria-labelledby="seguranca-titulo">
+        <h3 id="seguranca-titulo">Segurança do cartão</h3>
+        <p>Consulte as opções de bloqueio e gerenciamento do cartão empresarial nos canais de atendimento.</p>
+      </section>
+    </section>
+
+    <section id="mercado" aria-labelledby="mercado-titulo">
+      <h2 id="mercado-titulo">Indicadores de mercado</h2>
+      <table>
+        <caption>Indicadores de referência</caption>
+        <thead>
+          <tr>
+            <th scope="col">Indicador</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Variação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Ibovespa</th>
+            <td>128.450 pontos</td>
+            <td>+0,8%</td>
+          </tr>
+          <tr>
+            <th scope="row">CDI</th>
+            <td>10,65% ao ano</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <th scope="row">IPCA</th>
+            <td>4,5% nos últimos 12 meses</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Indicadores apresentados para acompanhamento e sujeitos a atualização.</p>
+    </section>
+
+    <section id="notificacoes" aria-labelledby="notificacoes-titulo">
+      <h2 id="notificacoes-titulo">Notificações</h2>
+      <ul>
+        <li>
+          <article>
+            <h3>Conta de consumo próxima do vencimento</h3>
+            <p>A fatura de telecomunicações vence em <time datetime="2026-11-18">18/11/2026</time>.</p>
+            <p><time datetime="2026-11-09T08:15">Hoje, às 08:15</time></p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>Resumo mensal disponível</h3>
+            <p>O relatório consolidado de movimentações da empresa referente ao último mês está disponível.</p>
+            <p><time datetime="2026-11-08T10:00">08/11/2026, às 10:00</time></p>
+          </article>
+        </li>
+      </ul>
+      <p><a href="#notificacoes">Ver todas as notificações</a></p>
+    </section>
+
+    <section id="perfil" aria-labelledby="perfil-titulo">
+      <h2 id="perfil-titulo">Cadastro e configurações da empresa</h2>
+      <dl>
+        <div>
+          <dt>Razão social</dt>
+          <dd>Phoenix Tecnologia e Serviços Ltda.</dd>
+        </div>
+        <div>
+          <dt>Nome fantasia</dt>
+          <dd>Phoenix Tecnologia</dd>
+        </div>
+        <div>
+          <dt>CNPJ</dt>
+          <dd>12.345.678/0001-90</dd>
+        </div>
+        <div>
+          <dt>Unidade selecionada</dt>
+          <dd>Matriz — São Paulo, SP</dd>
+        </div>
+        <div>
+          <dt>Política de investimentos empresariais</dt>
+          <dd>Perfil moderado</dd>
+        </div>
+      </dl>
+      <ul>
+        <li><a href="#dados-empresa">Dados cadastrais da empresa</a></li>
+        <li><a href="#preferencias">Preferências de notificação empresarial</a></li>
+        <li><a href="#seguranca-conta">Segurança dos acessos corporativos</a></li>
+        <li><a href="#documentos">Documentos e relatórios da empresa</a></li>
+      </ul>
+    </section>
+
+    <section id="dados-empresa" aria-labelledby="dados-empresa-titulo">
+      <h3 id="dados-empresa-titulo">Dados cadastrais da empresa</h3>
+      <p>Razão social: Phoenix Tecnologia e Serviços Ltda.</p>
+      <p>CNPJ: 12.345.678/0001-90</p>
+      <p>Endereço da matriz: Avenida Paulista, 1000 — Bela Vista, São Paulo — SP.</p>
+    </section>
+    <section id="preferencias" aria-labelledby="preferencias-titulo">
+      <h3 id="preferencias-titulo">Preferências de notificação empresarial</h3>
+      <p>Configurações de avisos financeiros, vencimentos e relatórios periódicos da empresa.</p>
+    </section>
+    <section id="seguranca-conta" aria-labelledby="seguranca-conta-titulo">
+      <h3 id="seguranca-conta-titulo">Segurança dos acessos corporativos</h3>
+      <p>Consulte as configurações de acesso e segurança vinculadas ao ambiente empresarial.</p>
+      <a href="login.html">Acessar ambiente empresarial</a>
+    </section>
+    <section id="documentos" aria-labelledby="documentos-titulo">
+      <h3 id="documentos-titulo">Documentos e relatórios empresariais</h3>
+      <p>Consulte comprovantes, extratos, demonstrativos e documentos relacionados às contas da empresa.</p>
+    </section>
+
+    <section id="ajuda" aria-labelledby="ajuda-titulo">
+      <h2 id="ajuda-titulo">Atendimento empresarial</h2>
+      <p>Consulte orientações sobre contas corporativas, pagamentos, transferências e investimentos empresariais.</p>
+      <ul>
+        <li><a href="sobre.html">Conheça o Phoenix Bank</a></li>
+        <li><a href="#inicio">Acessar gestão financeira empresarial</a></li>
+        <li><a href="mailto:atendimento@phoenixbank.example">Enviar mensagem ao atendimento</a></li>
+      </ul>
+    </section>
+  </main>
+  <script src="analise.js"></script>
+  <footer>
+    <p><a href="sobre.html">Sobre o Phoenix Bank</a> · Privacidade · Termos de uso · Acessibilidade</p>
+  </footer>
+</body>
+</html>

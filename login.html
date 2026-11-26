@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acesse o painel de gestão financeira empresarial do Phoenix Bank.">
+  <title>Acesso | Phoenix Bank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <a href="analise-financeira.html" aria-label="Phoenix Bank, ir para o painel">
+        <span aria-hidden="true">P</span>
+        <span>Phoenix Bank</span>
+      </a>
+      <h1>Acesse sua conta</h1>
+      <p>Entre para acompanhar a gestão financeira da sua empresa.</p>
+    </header>
+
+    <form action="analise-financeira.html" method="get">
+      <div>
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          value="phoenixbr@example"
+          autocomplete="username"
+          required
+        >
+      </div>
+
+      <div>
+        <label for="senha">Senha (qualquer valor para teste)</label>
+        <input
+          type="password"
+          id="senha"
+          autocomplete="current-password"
+          required
+        >
+      </div>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <p>Para testar a navegação, preencha qualquer valor no campo de senha e continue. Esta tela não autentica nem envia ou armazena as credenciais.</p>
+    <p><a href="sobre.html">Conheça o Phoenix Bank</a></p>
+  </main>
+</body>
+</html>
